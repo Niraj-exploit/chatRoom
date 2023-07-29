@@ -27,7 +27,8 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  background-image: url('../images/background4.jpg');
   color: #fff;
 
   font-size: 14px;
