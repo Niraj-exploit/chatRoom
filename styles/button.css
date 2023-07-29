@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #000;
+    overflow: hidden;
+} */
+
+button {
+    position: relative;
+    height: 50px;
+    width: 450px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #11111142;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* overflow: hidden; */
+    background: transparent;
+
+  }
+
+button:first-child:hover{
+    /* opacity: 0.5; */
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+}
+
+/* button:last-child:hover{
+    background: linear-gradient(90deg, #fa7199, #f5c962, #e43603, #fa7199);
+    background-size: 400%;
+} */
+
+button:first-child:before,
+button:last-child:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+button:first-child:hover:before,
+button:last-child:hover:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
