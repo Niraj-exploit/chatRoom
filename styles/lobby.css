@@ -1,17 +1,3 @@
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/background4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5; /* Adjust the opacity value (0.5 = 50% opacity) */
-  z-index: -1; /* Place the pseudo-element below the body content */
-}
-
 h3{
   position: absolute;
   top: 15%;
